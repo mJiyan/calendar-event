@@ -46,6 +46,16 @@ yarn start
 Open your browser at http://0.0.0.0:8080 
 ```
 
+## Documentation
+```sh
+git clone https://github.com/mJiyan/calendar-event-soniq.git
+
+cd calendar-event-soniq/server
+yarn
+yarn start
+
+## Then open the: http://localhost:8081/api-docs
+```
 
 ## Structure
 ```
