@@ -25,7 +25,7 @@ A short overview of the project
 ## Installation
 ### with Docker
 ```sh
-git clone https://github.com/mJiyan/calendar-event-soniq.git
+git clone https://github.com/mJiyan/calendar-event.git
 cd calendar-event-soniq
 docker-compose up --build
 
@@ -34,7 +34,7 @@ docker-compose up --build
 
 ### manually
 ```sh
-git clone https://github.com/mJiyan/calendar-event-soniq.git
+git clone https://github.com/mJiyan/calendar-event.git
 
 cd calendar-event-soniq/server
 yarn
@@ -51,7 +51,7 @@ Open your browser at http://0.0.0.0:8080
 ```sh
 
 In order to see swagger documentation:
-git clone https://github.com/mJiyan/calendar-event-soniq.git
+git clone https://github.com/mJiyan/calendar-event.git
 
 cd calendar-event-soniq/server
 yarn
@@ -189,10 +189,10 @@ yarn start
 
 ## Support
 
-Please [open an issue](https://github.com/mJiyan/calendar-event-soniq/issues) for support & suggestions.
+Please [open an issue](https://github.com/mJiyan/calendar-event/issues) for support & suggestions.
 
 
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/mJiyan/calendar-event-soniq/compare).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/mJiyan/calendar-event/compare).
