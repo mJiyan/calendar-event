@@ -76,7 +76,6 @@ export const useDeleteEventData = () => {
 };
 
 export const setSelectedEvent = (event) => async (dispatch) => {
-  console.log('EVENTT: ', event);
   dispatch({
     type: actionTypes.SET_SELECTED_EVENT,
     payload: event,

@@ -41,7 +41,6 @@ const EventModal = () => {
 
     try {
       if (Object.entries(selectedEvent).length !== 0) {
-        console.log('selectedEvent: ', selectedEvent);
         updateMutation.mutate(calendarEvent);
       } else {
         addMutation.mutate(calendarEvent);
@@ -102,7 +101,6 @@ const EventModal = () => {
                 <TimePicker
                   value={time}
                   onChange={(times) => {
-                    console.log('Times: ', times);
                     setTime(times);
                     dispatch(dayActions.setDaySelected(times));
                   }}

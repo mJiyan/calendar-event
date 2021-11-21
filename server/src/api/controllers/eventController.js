@@ -26,10 +26,7 @@ exports.get_event = (req, res) => {
 
 
 exports.update_event = (req, res) => {
-    console.log('Body: ', req.body);
     const { id } = req.params;
-    console.log('id: ', id);
-
     Event.findOneAndUpdate({ _id: id }, req.body, {new: true}, (err, event) => {
         if (err) res.status(500).send(err);
         event.save();
