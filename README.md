@@ -52,7 +52,6 @@ Open your browser at http://0.0.0.0:8080
 ## Test
 ```sh
 
-In order to see swagger documentation:
 git clone https://github.com/mJiyan/calendar-event.git
 
 cd calendar-event-soniq/server
