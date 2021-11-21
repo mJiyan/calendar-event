@@ -1,0 +1,169 @@
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Event:
+      type: object
+      required:
+        - id
+        - title
+        - description
+        - label
+        - day
+        - hours
+      properties:
+        id:
+          type: string
+          description: The auto-generated id of the event
+        title:
+          type: string
+          description: The event title
+        description:
+          type: string
+          description: The event description
+        label:
+          type: string
+          description: The event label
+        day:
+          type: string
+          description: The event created day
+        hours:
+          type: string
+          description: The event created hours
+
+/events:
+  get:
+    summary: Returns the list of all the events
+    tags: [Events]
+    responses:
+      200:
+        description: The list of the events
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/event"
+  post:
+    security:
+      - bearerAuth: []
+    summary: Create a new event
+    tags: [Events]
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/definitions/Event"
+    responses:
+      200:
+        description: The event was successfully created
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/Event"
+
+      500:
+        description: Some server error
+        
+/event/{id}:
+  get:
+    security:
+      - bearerAuth: []
+    summary: Get the event by id
+    tags: [Events]
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+          example: '6096243862273f5a7b75476d'
+        required: true
+        description: The event id
+    responses:
+      200:
+        description: The event description by id
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/Event"
+      404:
+        description: The event was not found
+  put:
+    summary: Update the event by the id
+    tags: [Events]
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+          example: '6096243862273f5a7b75476d'
+        required: true
+        description: The event id
+    requestBody:
+      required: false
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              day:
+                type: string
+                example: true
+    responses:
+      200:
+        description: The event was updated
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/Event"
+      404:
+        description: The event was not found
+      500:
+        description: Some error happened
+  delete:
+    summary: Remove the event by id
+    tags: [Events]
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+          example: '60960d07c3648358886572aa'
+        required: true
+        description: The event id
+    responses:
+      200:
+        description: The event is deleted
+        schema:
+          type: object
+          properties:
+            id:
+              type: string
+              example: '60960d07c3648358886572aa'
+      404:
+        description: The event is not found
+
+  Event:
+    type: "object"
+    properties:
+      id:
+        type: string
+        example: '609588482c0d5f49a43f99ee'
+      title:
+        type: string
+        example: 'Meeting at zoom'
+      description:
+        type: string
+        example: 'Meeting with the web developer team'
+      label:
+        type: string
+        example: 'blue'
+      day:
+        type: string
+        example: '2021-11-14'
+      hours:
+        type: string
+        example: '11:30'

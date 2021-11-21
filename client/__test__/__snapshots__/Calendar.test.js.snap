@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering components it should have the header 1`] = `ShallowWrapper {}`;
+
+exports[`rendering components it should match with the calendar component 1`] = `ShallowWrapper {}`;
