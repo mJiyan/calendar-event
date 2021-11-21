@@ -10,6 +10,7 @@ The app is built using react query, redux, hooks, tailwind.css. It also contain;
 ## Table of Contents
 - [Project Overview](#projectoverview)
 - [Installation](#installation)
+- [Documentation](#documentation)
 - [Structure](#structure)
 - [Support](#support)
 - [Contributing](#contributing)
