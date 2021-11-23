@@ -17,7 +17,7 @@ module.exports = ({ app }) => {
     app.use(express.static('public'));
 
     //Used to enable CORS with various options.
-    app.use(cors({ origin: ['http://0.0.0.0:8080'] }));
+    app.use(cors({ origin: ['http://0.0.0.0:8080','http://localhost:8080'] }));
     app.get('/', (req, res) => res.json('Welcome to node-api. http://localhost:8081/api-docs'));
 
     //Extracts the entire body portion of an incoming request stream and exposes it on req. body

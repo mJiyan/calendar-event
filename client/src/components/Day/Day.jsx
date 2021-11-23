@@ -12,9 +12,9 @@ const Day = ({ day, rowIndex }) => {
   const savedEvents = useSelector((state) => state.EventReducer.events);
 
   useEffect(() => {
-    const events = savedEvents.filter(
+    const events = savedEvents ? savedEvents.filter(
       (evt) => dayjs(evt.day).format('DD-MM-YY') === day.format('DD-MM-YY'),
-    );
+    ) : [];
     setDayEvents(events);
   }, [savedEvents, day]);
 

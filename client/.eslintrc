@@ -11,6 +11,7 @@
     "jsx-a11y/no-static-element-interactions": "off",
     "react/jsx-fragments": "off",
     "react/no-array-index-key": "off",
+    "import/extensions": "off",
     "react/button-has-type": "off",
     "react/destructuring-assignment": "off",
     "no-plusplus": "off",
