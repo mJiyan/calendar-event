@@ -19,21 +19,23 @@ const Header = () => {
 
   return (
     <header className="px-4 py-2 flex items-center">
-      <h1 className="mr-10 text-xl text-gray-500 fond-bold">Soniq Calendar</h1>
-      <button onClick={handleReset} className="border rounded py-2 px-4 mr-5">
+      <h1 className="mr-10 text-xl text-gray-500 fond-bold" data-testid="header">
+        Soniq Calendar
+      </h1>
+      <button onClick={handleReset} className="border rounded py-2 px-4 mr-5" data-testid="reset-month">
         Today
       </button>
-      <button onClick={handlePrevMonth}>
+      <button onClick={handlePrevMonth} data-testid="prev-month">
         <span className="material-icons-outlined cursor-pointer text-gray-600 mx-2">
           chevron_left
         </span>
       </button>
-      <button onClick={handleNextMonth}>
+      <button onClick={handleNextMonth} data-testid="next-month">
         <span className="material-icons-outlined cursor-pointer text-gray-600 mx-2">
           chevron_right
         </span>
       </button>
-      <h2 className="ml-4 text-xl text-gray-500 font-bold">
+      <h2 className="ml-4 text-xl text-gray-500 font-bold" data-testid="current-date">
         {dayjs(new Date(dayjs().year(), monthIndex)).format('MMMM YYYY')}
       </h2>
     </header>

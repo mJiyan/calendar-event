@@ -1,0 +1,750 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering components it should match with the month component 1`] = `
+<div
+  className="flex-1 grid grid-cols-7 grid-rows-5"
+>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-31-01-22"
+    >
+      <p
+        className="text-sm p-1 mt-1"
+        day-testid="row-value-31-01-22"
+      >
+        MON
+      </p>
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-31-01-22"
+      >
+        31
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-31-01-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-01-02-22"
+    >
+      <p
+        className="text-sm p-1 mt-1"
+        day-testid="row-value-01-02-22"
+      >
+        TUE
+      </p>
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-01-02-22"
+      >
+        01
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-01-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-02-02-22"
+    >
+      <p
+        className="text-sm p-1 mt-1"
+        day-testid="row-value-02-02-22"
+      >
+        WED
+      </p>
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-02-02-22"
+      >
+        02
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-02-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-03-02-22"
+    >
+      <p
+        className="text-sm p-1 mt-1"
+        day-testid="row-value-03-02-22"
+      >
+        THU
+      </p>
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-03-02-22"
+      >
+        03
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-03-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-04-02-22"
+    >
+      <p
+        className="text-sm p-1 mt-1"
+        day-testid="row-value-04-02-22"
+      >
+        FRI
+      </p>
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-04-02-22"
+      >
+        04
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-04-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-05-02-22"
+    >
+      <p
+        className="text-sm p-1 mt-1"
+        day-testid="row-value-05-02-22"
+      >
+        SAT
+      </p>
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-05-02-22"
+      >
+        05
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-05-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-06-02-22"
+    >
+      <p
+        className="text-sm p-1 mt-1"
+        day-testid="row-value-06-02-22"
+      >
+        SUN
+      </p>
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-06-02-22"
+      >
+        06
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-06-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-07-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-07-02-22"
+      >
+        07
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-07-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-08-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-08-02-22"
+      >
+        08
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-08-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-09-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-09-02-22"
+      >
+        09
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-09-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-10-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-10-02-22"
+      >
+        10
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-10-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-11-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-11-02-22"
+      >
+        11
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-11-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-12-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-12-02-22"
+      >
+        12
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-12-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-13-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-13-02-22"
+      >
+        13
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-13-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-14-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-14-02-22"
+      >
+        14
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-14-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-15-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-15-02-22"
+      >
+        15
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-15-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-16-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-16-02-22"
+      >
+        16
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-16-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-17-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-17-02-22"
+      >
+        17
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-17-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-18-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-18-02-22"
+      >
+        18
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-18-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-19-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-19-02-22"
+      >
+        19
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-19-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-20-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-20-02-22"
+      >
+        20
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-20-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-21-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-21-02-22"
+      >
+        21
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-21-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-22-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-22-02-22"
+      >
+        22
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-22-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-23-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-23-02-22"
+      >
+        23
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-23-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-24-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-24-02-22"
+      >
+        24
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-24-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-25-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-25-02-22"
+      >
+        25
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-25-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-26-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-26-02-22"
+      >
+        26
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-26-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-27-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-27-02-22"
+      >
+        27
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-27-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-28-02-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-28-02-22"
+      >
+        28
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-28-02-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-01-03-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-01-03-22"
+      >
+        01
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-01-03-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-02-03-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-02-03-22"
+      >
+        02
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-02-03-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-03-03-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-03-03-22"
+      >
+        03
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-03-03-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-04-03-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-04-03-22"
+      >
+        04
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-04-03-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-05-03-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-05-03-22"
+      >
+        05
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-05-03-22"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="border border-gray-200 flex flex-col"
+  >
+    <header
+      className="flex flex-col items-center"
+      data-testid="day-header-06-03-22"
+    >
+      <p
+        className="text-sm p-1 my-1 text-center "
+        data-testid="day-value-06-03-22"
+      >
+        06
+      </p>
+    </header>
+    <div
+      className="flex-1 cursor-pointer"
+      data-testid="select-day-06-03-22"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

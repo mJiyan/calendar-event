@@ -34,9 +34,11 @@ const Day = ({ day, rowIndex }) => {
 
   return (
     <div className="border border-gray-200 flex flex-col">
-      <header className="flex flex-col items-center">
-        {rowIndex === 0 && <p className="text-sm p-1 mt-1">{day.format('ddd').toUpperCase()}</p>}
-        <p className={`text-sm p-1 my-1 text-center ${isItPresentDay()}`}>{day.format('DD')}</p>
+      <header className="flex flex-col items-center" data-testid={`day-header-${day.format('DD-MM-YY')}`}>
+        {rowIndex === 0 && <p className="text-sm p-1 mt-1" day-testid={`row-value-${day.format('DD-MM-YY')}`}>{day.format('ddd').toUpperCase()}</p>}
+        <p className={`text-sm p-1 my-1 text-center ${isItPresentDay()}`} data-testid={`day-value-${day.format('DD-MM-YY')}`}>
+          {day.format('DD')}
+        </p>
       </header>
       <div
         className="flex-1 cursor-pointer"
@@ -44,14 +46,16 @@ const Day = ({ day, rowIndex }) => {
           dispatch(dayActions.setDaySelected(day));
           dispatch(modalActions.setShowEventModal(true));
         }}
+        data-testid={`select-day-${day.format('DD-MM-YY')}`}
       >
-        {dayEvents.map((evt, idx) => (
+        {dayEvents.map((event, idx) => (
           <div
+            className={`bg-${event.label}-200 p-1 mr-3 text-gray-600 text-sm rounded mb-1 truncate`}
             key={idx}
-            onClick={() => dispatch(eventActions.setSelectedEvent(evt))}
-            className={`bg-${evt.label}-200 p-1 mr-3 text-gray-600 text-sm rounded mb-1 truncate`}
+            onClick={() => dispatch(eventActions.setSelectedEvent(event))}
+            data-testid={`select-event-${day.format('DD-MM-YY')}`}
           >
-            {evt.title}
+            {event.title}
           </div>
         ))}
       </div>

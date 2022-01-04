@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering components it should match with the month component 1`] = `
+<div
+  className="h-screen w-full fixed left-0 top-0 flex justify-center items-center"
+  data-testid="modal-component"
+>
+  <form
+    className="bg-white rounded-lg shadow-2xl w-1/4"
+  >
+    <header
+      className="bg-gray-100 px-4 py-2 flex justify-between items-center"
+    >
+      <span
+        className="material-icons-outlined text-gray-400"
+      >
+        drag_handle
+      </span>
+      <div>
+        <span
+          className="material-icons-outlined text-gray-400 cursor-pointer"
+          data-testid="delete-button"
+          onClick={[Function]}
+        >
+          delete
+        </span>
+        <button
+          data-testid="close-button"
+          onClick={[Function]}
+        >
+          <span
+            className="material-icons-outlined text-gray-400"
+          >
+            close
+          </span>
+        </button>
+      </div>
+    </header>
+    <div
+      className="p-3"
+    >
+      <div
+        className="grid grid-cols-1/5 items-end gap-y-7"
+      >
+        <div>
+           
+        </div>
+        <input
+          className="pt-3 border-0 text-gray-600 text-xl font-semibold pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
+          data-testid="title-input"
+          maxLength={30}
+          name="title"
+          onChange={[Function]}
+          placeholder="Add title"
+          required={true}
+          type="text"
+          value="Meeting"
+        />
+        <span
+          className="material-icons-outlined text-gray-400"
+        >
+          schedule
+        </span>
+        <p>
+          Tuesday, January 04
+        </p>
+        <span
+          className="material-icons-outlined text-gray-400"
+        >
+          schedule
+        </span>
+        <p>
+          <div
+            className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+          >
+            <div
+              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+              onClick={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                aria-label="Choose time, selected time is 12:00 AM"
+                aria-readonly={true}
+                autoFocus={false}
+                className="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                id="mui-1"
+                onAnimationStart={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                readOnly={true}
+                required={false}
+                type="text"
+                value="12:00 AM"
+              />
+              <fieldset
+                aria-hidden={true}
+                className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  className="css-nnbavb"
+                >
+                  <span
+                    className="notranslate"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "&#8203;",
+                      }
+                    }
+                  />
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </p>
+        <span
+          className="material-icons-outlined text-gray-400"
+        >
+          segment
+        </span>
+        <input
+          className="pt-3 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
+          data-testid="description-input"
+          name="description"
+          onChange={[Function]}
+          placeholder="Add a description"
+          required={true}
+          type="text"
+          value="Meet with friends"
+        />
+        <span
+          className="material-icons-outlined text-gray-400"
+        >
+          bookmark_border
+        </span>
+        <div
+          className="flex gap-x-2"
+        >
+          <span
+            className="bg-indigo-500 w-6 h-6 rounded-full flex items-center justify-center cursor-pointer"
+            data-testid="color-button-0"
+            onClick={[Function]}
+          />
+          <span
+            className="bg-gray-500 w-6 h-6 rounded-full flex items-center justify-center cursor-pointer"
+            data-testid="color-button-1"
+            onClick={[Function]}
+          />
+          <span
+            className="bg-green-500 w-6 h-6 rounded-full flex items-center justify-center cursor-pointer"
+            data-testid="color-button-2"
+            onClick={[Function]}
+          />
+          <span
+            className="bg-blue-500 w-6 h-6 rounded-full flex items-center justify-center cursor-pointer"
+            data-testid="color-button-3"
+            onClick={[Function]}
+          />
+          <span
+            className="bg-red-500 w-6 h-6 rounded-full flex items-center justify-center cursor-pointer"
+            data-testid="color-button-4"
+            onClick={[Function]}
+          />
+          <span
+            className="bg-purple-500 w-6 h-6 rounded-full flex items-center justify-center cursor-pointer"
+            data-testid="color-button-5"
+            onClick={[Function]}
+          >
+            <span
+              className="material-icons-outlined text-white text-sm"
+            >
+              check
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <footer
+      className="flex jusify-end border-t p-3 mt-5"
+    >
+      <button
+        className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white"
+        data-testid="save-button"
+        onClick={[Function]}
+        type="submit"
+      >
+        Save
+      </button>
+    </footer>
+  </form>
+</div>
+`;

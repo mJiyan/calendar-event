@@ -19,7 +19,7 @@ const EventModal = () => {
   const [title, setTitle] = useState(selectedEvent ? selectedEvent.title : '');
   const [description, setDescription] = useState(selectedEvent ? selectedEvent.description : '');
   const [selectedLabel, setSelectedLabel] = useState(
-    selectedEvent ? labelsClasses.find((lbl) => lbl === selectedEvent.label) : labelsClasses[0],
+    selectedEvent? labelsClasses.find((lbl) => lbl === selectedEvent.label) : labelsClasses[0],
   );
   const [time, setTime] = useState(
     Object.entries(selectedEvent).length !== 0 ? selectedEvent.day : daySelected,
@@ -31,7 +31,7 @@ const EventModal = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const calendarEvent = {
+    const eventList = {
       title,
       description,
       label: selectedLabel,
@@ -41,9 +41,9 @@ const EventModal = () => {
 
     try {
       if (Object.entries(selectedEvent).length !== 0) {
-        updateMutation.mutate(calendarEvent);
+        updateMutation.mutate(eventList);
       } else {
-        addMutation.mutate(calendarEvent);
+        addMutation.mutate(eventList);
       }
       dispatch(modalActions.setShowEventModal(false));
       dispatch(eventActions.setSelectedEvent(false));
@@ -53,7 +53,7 @@ const EventModal = () => {
   };
 
   return (
-    <div className="h-screen w-full fixed left-0 top-0 flex justify-center items-center">
+    <div className="h-screen w-full fixed left-0 top-0 flex justify-center items-center" data-testid="modal-component">
       <form className="bg-white rounded-lg shadow-2xl w-1/4">
         <header className="bg-gray-100 px-4 py-2 flex justify-between items-center">
           <span className="material-icons-outlined text-gray-400">drag_handle</span>
@@ -66,6 +66,7 @@ const EventModal = () => {
                   dispatch(eventActions.setSelectedEvent(false));
                 }}
                 className="material-icons-outlined text-gray-400 cursor-pointer"
+                data-testid="delete-button"
               >
                 delete
               </span>
@@ -75,6 +76,7 @@ const EventModal = () => {
                 dispatch(modalActions.setShowEventModal(false));
                 dispatch(eventActions.setSelectedEvent(false));
               }}
+              data-testid="close-button"
             >
               <span className="material-icons-outlined text-gray-400">close</span>
             </button>
@@ -92,8 +94,9 @@ const EventModal = () => {
               required
               className="pt-3 border-0 text-gray-600 text-xl font-semibold pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
               onChange={(e) => setTitle(e.target.value)}
+              data-testid="title-input"
             />
-            <span className="material-icons-outlined text-gray-400">calendar_today</span>
+            <span className="material-icons-outlined text-gray-400">schedule</span>
             <p>{daySelected.format('dddd, MMMM DD')}</p>
             <span className="material-icons-outlined text-gray-400">schedule</span>
             <p>
@@ -117,6 +120,7 @@ const EventModal = () => {
               required
               className="pt-3 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
               onChange={(e) => setDescription(e.target.value)}
+              data-testid="description-input"
             />
             <span className="material-icons-outlined text-gray-400">bookmark_border</span>
             <div className="flex gap-x-2">
@@ -125,6 +129,7 @@ const EventModal = () => {
                   key={i}
                   onClick={() => setSelectedLabel(lblClass)}
                   className={`bg-${lblClass}-500 w-6 h-6 rounded-full flex items-center justify-center cursor-pointer`}
+                  data-testid={`color-button-${i}`}
                 >
                   {selectedLabel === lblClass && (
                     <span className="material-icons-outlined text-white text-sm">check</span>
@@ -139,6 +144,7 @@ const EventModal = () => {
             type="submit"
             onClick={handleSubmit}
             className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white"
+            data-testid="save-button"
           >
             Save
           </button>
